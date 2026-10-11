@@ -12,10 +12,16 @@ allowed-tools:
   - Bash(openssl *)
 ---
 
-# /whatsapp:configure — WhatsApp Channel Setup
+# /whatsapp:configure — WhatsApp Channel Setup (cloud transport)
 
 Writes Cloud API credentials to `<state-dir>/.env` and orients the user on
 access policy. The server reads `.env` once at boot.
+
+**This is only for the `cloud` transport.** The default `linked` transport
+needs no credentials at all — it pairs by QR scan. If `WHATSAPP_TRANSPORT` is
+unset or `linked`, tell the user to run `/whatsapp:link` instead and stop here.
+Only continue if they have deliberately chosen the Cloud API, which also
+requires a phone number not already registered on WhatsApp.
 
 **Resolve the state directory first** (it may be overridden for multi-number
 or per-project setups):

@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 /**
- * End-to-end smoke test for the WhatsApp channel server.
+ * End-to-end smoke test for the WhatsApp channel server, Cloud API transport.
  *
  * Spawns server.ts with a mock Graph API in front of it and exercises the paths
  * that matter: webhook verification, signature rejection, sender gating,
@@ -73,6 +73,7 @@ const proc = Bun.spawn({
   cmd: ['bun', join(import.meta.dir, '..', 'plugins', 'whatsapp', 'server.ts')],
   env: {
     ...process.env,
+    WHATSAPP_TRANSPORT: 'cloud',
     WHATSAPP_STATE_DIR: STATE_DIR,
     WHATSAPP_ACCESS_TOKEN: 'test-token',
     WHATSAPP_PHONE_NUMBER_ID: PHONE_NUMBER_ID,
