@@ -1,6 +1,12 @@
 {
   "name": "whatsapp",
-  "description": "WhatsApp channel for Claude Code — messaging bridge over the official WhatsApp Cloud API with built-in access control. Manage pairing, allowlists, and policy via /whatsapp:access.",
-  "version": "0.1.0",
-  "keywords": ["whatsapp", "messaging", "channel", "mcp"]
+  "description": "WhatsApp channel for Claude Code \u2014 messaging bridge with built-in access control. Link any existing WhatsApp number by QR scan (/whatsapp:link), or use the Cloud API. Manage pairing, allowlists and policy via /whatsapp:access.",
+  "version": "0.2.0",
+  "keywords": [
+    "whatsapp",
+    "messaging",
+    "channel",
+    "mcp",
+    "baileys"
+  ]
 }

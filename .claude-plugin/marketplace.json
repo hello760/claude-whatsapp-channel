@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "mmg-channels",
-  "description": "Private channel plugins for Claude Code",
+  "description": "Channel plugins for Claude Code",
   "owner": {
     "name": "MarketMeGood"
   },
   "plugins": [
     {
       "name": "whatsapp",
-      "description": "WhatsApp channel for Claude Code — two-way bridge over the official WhatsApp Cloud API, with signature-verified webhooks, sender allowlist, and permission relay.",
+      "description": "WhatsApp channel for Claude Code \u2014 two-way bridge into a running session. Links an existing WhatsApp number by QR scan (no Business API, no Meta app), or runs on the official Cloud API. Sender allowlist and permission relay built in.",
       "author": {
         "name": "MarketMeGood"
       },
