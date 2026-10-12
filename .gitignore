@@ -1,3 +1,15 @@
 node_modules/
 *.log
+
+# Channel state. It normally lives in ~/.claude/channels/whatsapp/, but if
+# WHATSAPP_STATE_DIR is ever pointed at a checkout, none of this may be
+# committed: auth/ is a logged-in WhatsApp device session, and .env holds
+# Cloud API credentials.
 .env
+auth/
+access.json
+window.json
+qr.txt
+qr.txt.png
+inbox/
+approved/
